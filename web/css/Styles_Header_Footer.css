@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --fondo: #150129;
+    --header: #120222;
+    --header-color-text-icon: #26f9c2;
+    --header-boder: #3504668A;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Confirguración Universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+#logo{
+    font-family: 'Rancho', cursive;
+    color: var(--header-color-text-icon);
+}
+
+
+#texto-central a:hover,
+#texto-central > li > #activo{
+    border: 1px solid rgba(53, 4, 102, 0.54);
+    background:rgba(53, 4, 102, 0.54);
+    border-radius: 2%;
+}
+ 
+#profile-img{
+    object-fit: cover;
+    list-style: none;
+}
+
+/*Inicio de Sesion*/
+.login-container{
+    width: 40%;
+    height: 54vh;
+    margin-bottom: 5%;
+    text-align: left;
+    overflow: hidden;
+    margin-left: 33%;
+    background: #2FFCC6D9;
+    box-shadow: 2px 2px 20px black;
+    position: relative;
+
+}
+.login-container h2{
+    display: flex;
+    justify-content: center;
+    padding: 1% 0 1% 0;
+    margin: 4%;
+    font-size: 200%;
+}
+
+.label-group input{
+    margin: 2% 0 10% 0;
+    border-radius: 0px;
+    width: 210%;
+    height: 7vh;
+}
+
+.label-group{
+    display: grid;
+    justify-content: left;
+    margin-left: 20%;
+}
+
+.label-group label{
+    font-size: 90%;
+}
+
+.label-check{
+    display: flex;
+    justify-content: left;
+    margin-left: 34%;
+}
+.label-check label{
+    font-size: 80%;
+}
+.label-check input{
+    margin-left: 1%;
+}
+
+#enlace{
+    display: flex;
+    justify-content: left;
+    font-size: 80%;
+    margin-left: 36.5%;
+    margin-top: 1%;
+    color: black;
+}
+
+#exit{
+    font-size: 36px;
+    right: 0;
+    top: 0;
+    margin: 0 2% 0 0;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.445);
+}
+
+#exit:hover{
+    color: red;
+}
+
+/*carousel*/
+.movie-container{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    border: 2px solid rgba(53, 4, 102, 0.54);
+    background-color: black;
+    margin-bottom: 3%;
+}
+
+.box{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    line-height: 1;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.box img{
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 600ms;
+}
+
+.text-cont{
+    position:absolute;
+    top: 45%;
+    text-align: center;
+    visibility: hidden;
+    cursor: pointer;
+    color: white;
+}
+
+.text-cont h3{
+    padding-bottom: 10px;
+}
+
+.box:hover{
+    flex: 50%;
+}
+
+
+.box:hover img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.box:hover .text-cont{
+    visibility: visible;
+    transition-duration: 2s;
+}
+
+/*Tendencias*/
+.popular-container-f{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+.popular-container-f div img{
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border: 1px solid #26f9c2;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.popular-container-1{
+    position: relative;
+    background-color: black;
+    width: 40%;
+    height: 60vh;
+    margin-left: 10%;
+    margin-right: 0%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #666;
+}
+
+
+.popular-container-2{
+    position: absolute;
+    background-color:black;
+    width: 40%;
+    height: 60vh;
+    margin-top: 5%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-left: 50%;
+    transition: all 700ms;
+}
+
+
+.popular-container-text{
+    position: absolute;
+    background-color: #340365;
+    height: 60vh;
+    width: 49.8%;
+    border-radius: 0 12px 12px 0;
+    margin-left: 50%;
+    text-align: justify;
+    color: var(--header-color-text-icon);
+    padding: 23% 2% 0 2%;
+    visibility: hidden;
+}
+
+.popular-container-1:hover img{
+    opacity: 0.9;
+    transition-duration: 0.8s;
+}
+
+.popular-container-2:hover img{
+    opacity: 0.6;
+    transition-duration: 0.8s;
+}
+
+.popular-container-1:hover .popular-container-text{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+
+.popular-container-2:hover .popular-container-text{
+    visibility: visible;
+    transition-delay: 0.2s;
+}
+
+/*Continuar viendo*/
+.Ultima-vista{
+    width: 80%;
+    height: 80vh;
+    position: relative;
+    margin: 3% 10% 3% 10%;
+}
+
+.Ultima-vista a{
+    float: left;
+    width: 20%;
+    padding: 2% 0 2% 0;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-top: 0.2%;
+    color: var(--header-color-text-icon);
+}
+
+.Ultima-vista a:hover, #ult{
+    background-color: var(--header-color-text-icon);
+    color: black;
+}
+
+#cv{
+    margin-left: 0.5%;
+}
+
+.Ultima-vista-img{
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    bottom: 0;
+    background: yellow;
+    opacity: 0.8;
+}
+
+.ld-1{
+    position: absolute;
+    width: 90%;
+    background-color: var(--header-color-text-icon);
+    height: 2vh;
+    bottom: 3%;
+    margin: 0 5% 0 5%;
+    border-radius: 100px;
+}
+
+.ld-2{
+    position: absolute;
+    width: 56%;
+    background-color: #0e8867;
+    height: 2vh;
+    bottom: 3%;
+    margin: 0 5% 0 0;
+    border-radius: 100px;
+}
+
+.Ultima-vista-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Trailers*/
+
+.trailers-container{
+    width: 100%;
+    height: 55vh;
+    background-color:rgba(0, 0, 0, 0.268);
+    display: flex;
+    color: white;
+    padding-left: 1%;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+
+.trailers-container h2{
+    position: absolute;
+}
+
+.trailers-container div{
+    position: relative;
+    width: 24.8%;
+    height: 44vh;
+    overflow: hidden;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+.trailers-container .movie{
+    position: absolute;
+    width: 92%;
+    height: 30vh;
+    object-fit: cover;
+    justify-content: center;
+    border: 1px solid #26f9c2;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #666;
+}
+
+.trailers-container .button{
+    position: absolute;
+    bottom: 49%;
+    font-size: 60px;
+    color: white;
+    padding-left: 37%;
+    opacity: 0.5;
+}
+
+.trailers-container div a{
+    position: absolute;
+    bottom: 19%;
+    color: white;
+    text-decoration: none;
+    padding-left: 5%;
+    font-weight: bold;
+}
+
+.trailers-container div p{
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    text-align: center;
+}
+
+.button:hover{
+    opacity: 1;
+}
+
+/*Tendencias*/
+.Trending-container{
+    width: 100%;
+    height: 54vh;
+    display: flex;
+    color: white;
+    padding-left: 0;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+
+.Trending-container div{
+    position: relative;
+    width: 15%;
+    height: 43vh;
+    overflow: hidden;
+    padding: 1%;
+    margin-top: 0;
+}
+
+.Trending-container img{
+    position: absolute;
+    width: 87%;
+    height: 35vh;
+    object-fit: cover;
+    justify-content: center;
+    border: 1px solid #26f9c2;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #666;
+    opacity: 0.8;
+}
+
+
+.Trending-container div a{
+    position: absolute;
+    bottom: 7%;
+    color: white;
+    text-decoration: none;
+    padding-left: 1%;
+    font-weight: bold;
+}
+
+.Trending-container .valor{
+    font-size: 20px;
+    bottom: 16%;
+    padding-left: 4%;
+    opacity: 0.2;
+}
+
+
+.Trending-container div p{
+    position: absolute;
+    bottom: -2%;
+    color: white;
+    font-size: 80%;
+    text-align:center;
+}
+
+.valor:hover{
+    opacity: 1;
+    color: whitesmoke;
+    text-shadow: 0px 0px 20px whitesmoke
+}
+
+/*Footer*/
+.footer-container{
+    background: var(--header);
+    width: 100%;
+    height: 16vh;
+    padding: 1%;
+}
+
+.footer-container .logo{
+    text-align: center;
+    padding: 0 0 1% 0;
+}
+
+.footer-container ul{
+    list-style: none;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+.footer-container ul li a{
+    text-decoration: none;
+    color: var(--header-color-text-icon);
+    padding-right: 2vh;
+}
+
+footer h2{
+    font-family: 'Rancho', cursive;
+    color: var(--header-color-text-icon);
+    font-size: 35px;
+    text-align: center;
+}
+
