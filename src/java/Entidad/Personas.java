@@ -12,6 +12,15 @@ public class Personas {
     private String Usuario;
     private String Contrasena;
 
+    public String getProfile_img() {
+        return Profile_img;
+    }
+
+    public void setProfile_img(String Profile_img) {
+        this.Profile_img = Profile_img;
+    }
+    private String Profile_img;
+
     public int getId() {
         return Id;
     }
@@ -59,4 +68,5 @@ public class Personas {
     public void setContrasena(String Contrasena) {
         this.Contrasena = Contrasena;
     }
+    
 }

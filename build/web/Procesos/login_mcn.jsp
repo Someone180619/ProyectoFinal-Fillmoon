@@ -16,12 +16,13 @@
         Personas persona = usuariodb.ValidarLogin(usuario);
         
         if (persona != null){
+            JOptionPane.showMessageDialog(null, persona.getProfile_img());
             session.setAttribute("id_usuario", persona.getId());
             session.setAttribute("nombre_usuario", persona.getNombre());
             session.setAttribute("apellido_usuario", persona.getApellido());
             session.setAttribute("correo_usuario", persona.getEmail());
+            session.setAttribute("profile_img", persona.getProfile_img());
             session.setAttribute("usuario", usuario.getUsername());
-            JOptionPane.showMessageDialog(null, "El usuario ha sido encontrado en la base de datos");
             session.setAttribute("error", 0);
             response.sendRedirect("../principal.jsp");
         }else{

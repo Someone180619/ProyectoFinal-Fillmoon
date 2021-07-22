@@ -21,7 +21,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     </head>
-<body style="background-color: #150129">
+<body style="background-color: 	#D3D3D3">
     
     <!-- Header BootStrap -->
     
@@ -51,10 +51,10 @@
                     </li>
                     <%}else{%>
                     <li class="nav-item ps-3 pe-3">
-                        <a class="nav-link text-light" aria-current="page" href="#" id="activo">Inicio</a>
+                        <a class="nav-link text-light" aria-current="page" href="principal.jsp" id="activo">Inicio</a>
                     </li>
                     <li class="nav-item ps-3 pe-3">
-                        <a class="nav-link text-light" href="#">Pelicula</a>
+                        <a class="nav-link text-light" href="seccion_peliculas.jsp">Pelicula</a>
                     </li>
                     <li class="nav-item ps-3 pe-3">
                         <a class="nav-link text-light" href="#">Series</a>
@@ -92,19 +92,19 @@
                             Usuario
                         </a>
                         <ul class="dropdown-menu me-3 rounded-0" aria-labelledby="navbarDropdown">
-                            <li><p class="nav-item text-center">Nombre de la cuenta</p></li>
+                            <li><p class="nav-item text-center"><%= session.getAttribute("nombre_usuario")%></p></li>
                             <li>
                                 <ul class="nav-item" id="profile-img">
                                     <li class="nav-item">
-                                        <img src="http://s4.thingpic.com/images/s4/eJUVBCxdW6z47vVFBEgAQkTz.jpeg" alt="" width="140" height="140" class="border border-3 border-dark rounded-pill" id="profile-img">
+                                        <img src="<%= session.getAttribute("profile_img")%>" alt="" width="140" height="140" class="border border-3 border-dark rounded-pill" id="profile-img">
                                     </li> 
                                 </ul>
                             </li>
-                            <li><a class="dropdown-item p-2 mt-2" href="#"><i class="bi bi-gear-fill"></i> Configuración</a></li>
+                            <li><a class="dropdown-item p-2 mt-2" href="configurar_usuario.jsp"><i class="bi bi-gear-fill"></i> Configuración</a></li>
                             <li><a class="dropdown-item p-2" href="#"><i class="bi bi-info-circle-fill"></i> Ayuda y soporte técnico</a></li>
-                            <li><a class="dropdown-item p-2 mb-2" href="#"><i class="bi bi-telephone-fill"></i> Contáctenos</a></li>
+                            <li><a class="dropdown-item p-2 mb-2" href="contactar.jsp"><i class="bi bi-telephone-fill"></i> Contáctenos</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item mt-2 ps-2" href="#"><i class="bi bi-arrow-left-square-fill"></i> Salir</a></li>
+                            <li><a class="dropdown-item mt-2 ps-2" href="Procesos/exit.jsp"><i class="bi bi-arrow-left-square-fill"></i> Salir</a></li>
                         </ul>
                     </li>
                 </ul>

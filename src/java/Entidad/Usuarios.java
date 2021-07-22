@@ -4,6 +4,7 @@ public class Usuarios {
     private int Id;
     private String Username;
     private String Password;
+    private String Profile_img;
 
     public int getId() {
         return Id;
@@ -28,6 +29,5 @@ public class Usuarios {
     public void setPassword(String Password) {
         this.Password = Password;
     }
-    
     
 }
