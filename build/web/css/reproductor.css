@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --fondo: #150129;
+    --header: #120222;
+    --header-color-text-icon: #26f9c2;
+    --header-boder: #3504668A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.57);
+    position: relative;
+}
+
+.BSalir{
+    color: white;
+    font-size: 48px;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 1.2%;
+    opacity: 0.5;
+}
+
+.Salir{
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 1.7%;
+    margin-left: 3%;
+    opacity: 0.5;
+}
+
+.A1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-top: 1.7%;
+    margin-left: 84%;
+    opacity: 0.5;
+}
+
+.A2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-top: 1.7%;
+    margin-left: 90%;
+    opacity: 0.5;
+}
+
+.BSalir:hover, .Salir:hover, .A1:hover, .A2:hover{
+    opacity: 1;
+    text-shadow: 1px 1px 10px white;
+}
+
+body{
+    background: url(https://conocedores.com/wp-content/uploads/2021/01/wandavision-vision-serie-marvel-disney-13012020.png);
+}
+
+.Chat{
+    height: 25vh;
+    width: 20%;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.U1{
+    position: absolute;
+    height: 32%;
+}
+
+.T1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 25%;
+}
+
+.U2{
+    position: absolute;
+    height: 38%;
+    margin-top: 15%;
+}
+
+.T2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 25%;
+}
+
+.T25{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 25%;
+}
+
+.U3{
+    position: absolute;
+    height: 32%;
+    margin-top: 32.5%;
+    margin-left: 2%;
+}
+
+.T3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    margin-top: 38%;
+    margin-left: 25%;
+}
+
+.T35{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    margin-top: 44%;
+    margin-left: 25%;
+}
+
+.Controles{
+    position: relative;
+    height: 4.5vh;
+    margin-top: 25.5%;
+}
+
+.Anterior{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 0.12%;
+    margin-left: 2.5%;
+    opacity: 0.5;
+}
+
+.A{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    margin-left: 5%;
+    opacity: 0.5;
+}
+
+.Controles-rep{
+    width: 6.5%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BW{
+    color: white;
+    font-size: 25px;
+    margin-top: 8%;
+    position: absolute;
+    right: 89%;
+    opacity: 0.5;
+}
+
+.Play{
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    left: 33.5%;
+    margin-top: -5%;
+    opacity: 0.5;
+}
+
+.FW{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 8%;
+    left: 105%;
+    opacity: 0.5;
+}
+
+.Siguiente{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    opacity: 0.5;
+}
+
+.N{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 1.2%;
+    right: 5%;
+    opacity: 0.5;
+}
+
+.A:hover, .N:hover, .FW:hover, .Play:hover, .BW:hover{
+    opacity: 1;
+    text-shadow: 1px 1px 10px white;
+}
+footer{
+    height: 8.5vh;
+    background: rgba(0, 0, 0, 0.63);
+    position: relative;
+    margin-top: 0.5%;
+}
+
+.Send{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 0.8%;
+    margin-left: 2%;
+    padding: 0.7% 55% 0.7% 2%;
+}
+
+.Send > i{
+    position: absolute;
+    font-size: 44px;
+    right: 1%;
+    bottom: 8%;
+    color: black;
+}
+
+.FU1{
+    height: 70%;
+    position: absolute;
+    margin-top: 0.7%;
+    right: 11%;
+}
+
+.FU2{
+    height: 96%;
+    position: absolute;
+    margin-top: 0.1%;
+    right: 7%;
+}
+
+.FU3{
+    height: 70%;
+    position: absolute;
+    margin-top: 0.6%;
+    right: 4.5%;
+}
+
+.User{
+    font-size: 3.8vh;
+    position: absolute;
+    margin-top: 1%;
+    right: 1%;
+    color: white;
+}
