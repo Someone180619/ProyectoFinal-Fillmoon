@@ -62,4 +62,21 @@ public class ProcesosPersonas {
         
         return resultado;
     }
+    
+    public int EliminarPersona (int id_persona){
+        int resultado = 0;
+        
+        try{
+            Statement smtm = _cn.createStatement();
+            String query = "DELETE FROM personas WHERE id = "+id_persona+"";
+            
+            resultado = smtm.executeUpdate(query);
+            smtm.close();
+            return resultado;
+        }catch(Exception e){
+            int x = 1;
+        }
+        
+        return resultado;
+    }
 }

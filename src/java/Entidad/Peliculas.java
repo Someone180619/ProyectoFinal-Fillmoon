@@ -1,6 +1,7 @@
 package Entidad;
 
 public class Peliculas {
+
     private int Id;
     private String Nombre;
     private String Categoria;
@@ -9,6 +10,8 @@ public class Peliculas {
     private String Backdrops;
     private String Estreno;
     private String Descripcion;
+    private int Seccion;
+    private String NombreSeccion;
     private int Valoracion;
 
     public int getId() {
@@ -83,5 +86,21 @@ public class Peliculas {
         this.Valoracion = Valoracion;
     }
 
- 
+    public int getSeccion() {
+        return Seccion;
+    }
+
+    public void setSeccion(int Seccion) {
+        this.Seccion = Seccion;
+    }
+
+    public String getNombreSeccion() {
+        return NombreSeccion;
+    }
+
+    public void setNombreSeccion(String NombreSeccion) {
+        this.NombreSeccion = NombreSeccion;
+    }
+    
+    
 }

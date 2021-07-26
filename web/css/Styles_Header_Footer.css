@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');/*Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Concert+One&display=swap');/*Header*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');/*contenidos*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 :root{
     --fondo: #150129;
     --header: #120222;
@@ -12,22 +14,48 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/*Confirguración Universal*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*Textos*/
+#one{
+    font-family: 'Concert One', cursive;
 }
+
+#roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+#aton{
+    font-family: 'Anton', sans-serif;
+}
+
+#aton_text{
+    font-family: 'Anton', sans-serif;
+}
+
+#cursiva{
+    font-family: 'Satisfy', cursive;
+}
+
+/*Confirguración Universal*/
 
 /*Header*/
-#logo{
-    font-family: 'Rancho', cursive;
-    color: var(--header-color-text-icon);
+header{
+background-color: #120222;    
 }
 
+#BTNA{
+    background-color: #120222;
+}
 
-#texto-central a:hover,
-#texto-central > li > #activo{
+#navh{
+    background-color: #120222;
+    box-shadow: 0px 0px 20px #26f9c2;
+}
+
+#buscar{
+    box-shadow: 0px 0px 15px #26f9c2;
+}
+
+#aton a:hover{
     border: 1px solid rgba(53, 4, 102, 0.54);
     background:rgba(53, 4, 102, 0.54);
     border-radius: 2%;
@@ -38,86 +66,465 @@ body{
     list-style: none;
 }
 
-/*Inicio de Sesion*/
-.login-container{
-    width: 40%;
-    height: 54vh;
-    margin-bottom: 5%;
-    text-align: left;
-    overflow: hidden;
-    margin-left: 33%;
-    background: #2FFCC6D9;
-    box-shadow: 2px 2px 20px black;
+#icons{
+    color: #26f9c2;
+}
+
+#icons_text{
+    color: #26f9c2;
+    font-family: 'Concert One', cursive;
+}
+/*footer*/
+footer{
+ background-color: #120222;   
+}
+
+#logo{
+    font-family: 'Rancho', cursive;
+    color: var(--header-color-text-icon);
+}
+
+/*index*/
+.register-container{
+    width: 100%;
+    height: 45vh;
+    margin: 4.5% 0 4.5% 0;
+}
+
+.register-1{
     position: relative;
-
+    background-color: #989898;
+    width: 80%;
+    height: 45vh;
+    display: flex; 
+    margin: 0% 0 -12% 20%;
+    border-radius: 100px 0 0 100px;
+    overflow: hidden;
 }
-.login-container h2{
+
+.register-1 a{
+    position: absolute;
+    border: 1px solid var(--header-color-text-icon);
+    border-radius: 84px;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+    background-color: var(--header-color-text-icon);
+    margin-top: 11%;
+    margin-left: 5%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.967);
+}
+
+.register-1 p{
+    position: absolute;
+    font-size: 25px;
+    margin-top: 13.6%;
+    margin-left: 43%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.967);
+}
+
+.square-color-1{
+    position: absolute;
+    background-color: var(--header-color-text-icon);
+    width: 10%;
+    height: 80vh;
+    right: 0;
+}
+
+.register-2{
+    position: relative;
+    background-color: #989898;
+    width: 80%;
+    height: 45vh;
+    display: flex; 
+    left: 0%;
+    margin: 0% 0 0 0;
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
+}
+
+.register-2 a{
+    position: absolute;
+    border: 1px solid #989898;
+    border-radius: 84px;
+    font-size: 45px;
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+    background-color: var(--header-color-text-icon);
+    margin-top: 11%;
+    margin-left: 54%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.967);
+}
+
+.register-2 p{
+    position: absolute;
+    font-size: 25px;
+    margin-top: 13.6%;
+    margin-left: 17%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.967);
+}
+
+.square-color-2{
+    position: absolute;
+    background-color: var(--header-color-text-icon);
+    width: 10%;
+    height: 80vh;
+    left: 0;
+}
+
+.device-container{
+    width: 100%;
+    height: 95vh;
     display: flex;
-    justify-content: center;
-    padding: 1% 0 1% 0;
-    margin: 4%;
-    font-size: 200%;
+    overflow: hidden;
 }
 
-.label-group input{
-    margin: 2% 0 10% 0;
-    border-radius: 0px;
-    width: 210%;
-    height: 7vh;
+.device-container span{
+    position: absolute;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
 }
 
-.label-group{
-    display: grid;
-    justify-content: left;
-    margin-left: 20%;
+.device-container-b{
+    position: relative;
+    background: rgba(102, 102, 102, 0.645);
+    width: 23%;
+    height: 72vh;
+    box-shadow: 2px 2px 10px #666;
+    margin-top: 7%;
 }
 
-.label-group label{
-    font-size: 90%;
+.device-container-b img{
+    position: absolute;
+    width: 100%;
+    padding: 30% 15% 0 15%;
 }
 
-.label-check{
-    display: flex;
-    justify-content: left;
-    margin-left: 34%;
-}
-.label-check label{
-    font-size: 80%;
-}
-.label-check input{
-    margin-left: 1%;
+.device-container-b p{
+    position: absolute;
+    text-align: center;
+    margin-top: 90%;
+    padding: 0 10% 0 10%;
 }
 
-#enlace{
-    display: flex;
-    justify-content: left;
-    font-size: 80%;
-    margin-left: 36.5%;
-    margin-top: 1%;
+.device-container-b a{
+    position: absolute;
+    font-size: 100%;
+    bottom: 0%;
+    margin: 0 0 15% 35%;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--header-color-text-icon);
+    background: var(--header-color-text-icon);
+    padding: 3%;
+    border-radius: 100px;
     color: black;
 }
 
-#exit{
-    font-size: 36px;
-    right: 0;
-    top: 0;
-    margin: 0 2% 0 0;
-    position: absolute;
-    color: rgba(0, 0, 0, 0.445);
+.chat-container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#exit:hover{
-    color: red;
+.chat-container span{
+    position: absolute;
+    font-size: 250%;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.chat-container p{
+    position: absolute;
+    margin-top: 6%;
+    font-size: 100%;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+}
+
+.chat-container-b{
+    background: white;
+    position: relative;
+    width: 50%;
+    height: 70vh;
+    border: 2px solid var(--header-color-text-icon);
+    box-shadow: 0px 0px 10px #666;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.chat-container-b img{
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.chat-container-c{
+    position: absolute;
+    width: 50%;
+    height: 35vh;
+}
+.chat-container-c ul li{
+    display: flex;
+}
+
+.user1{
+    position: absolute;
+    width: 20%;
+    height: 10vh;
+    border-radius: 100px;
+    overflow: hidden;
+    top: 5%;
+    left: 3%;
+}
+
+.user1 img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.user2{
+    position: absolute;
+    width: 20%;
+    height: 10vh;
+    border-radius: 100px;
+    overflow: hidden;
+    top: 40%;
+    left: 3%;
+}
+
+.user2 img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.user3{
+    position: absolute;
+    width: 20%;
+    height: 10vh;
+    border-radius: 100px;
+    overflow: hidden;
+    top: 75%;
+    left: 3%;
+}
+
+.user3 img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+#ul1{
+    font-size: 15px;
+    top: 100%;
+    color: black;
+    font-weight: bold;
+    top: 0%;
+    position: absolute;
+}
+
+#ul3{
+    font-size: 15px;
+    top: 100%;
+    color: black;
+    font-weight: bold;
+    top: 39%;
+    position: absolute;
+}
+
+#ul5{
+    font-size: 15px;
+    top: 100%;
+    color: black;
+    font-weight: bold;
+    top: 70%;
+    position: absolute;
+}
+
+.chat-container-c ul li p{
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 12%;
+    padding-left: 23%;
+    color: black;
+}
+
+
+.Users{
+    width: 50%;
+    height: 8vh;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+}
+.ul4 {
+    width: 17%;
+    height: 8vh;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 100px;
+    bottom: 0;
+    right: 70%;
+}
+.ul4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.ul5{
+    width: 17%;
+    height: 8vh;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 100px;
+    bottom: 0;
+    right: 40%;
+}
+.ul5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.ul6 {
+    width: 17%;
+    height: 8vh;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 100px;
+    bottom: 0;
+    right: 10%;
+}
+
+.ul6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+/*Account*/
+.account-container{
+    width: 100%;
+    height: 95vh;
+    padding: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.268);
+}
+
+.account-container span{
+    position: absolute;
+    font-size: 250%;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.account-container-b{
+    position: relative;
+    background: rgba(255, 255, 255, 0.46);
+    width: 26%;
+    height: 65vh;
+    box-shadow: 2px 2px 10px #666;
+    margin: 7% 0 0 0;
+}
+
+.account-container-b img{
+    position: absolute;
+    width: 100%;
+    padding: 35% 15% 0 15%;
+}
+.account-container-b p{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    width: 60%;
+    height: 5vh;
+    text-align: center;
+    top: 68%;
+    left: 18%;
+}
+
+.account-container-b a{
+    position: absolute;
+    font-size: 100%;
+    bottom: 0%;
+    margin: 0 0 10% 31%;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--header-color-text-icon);
+    background: var(--header-color-text-icon);
+    padding: 5%;
+    border-radius: 100px;
+    color: black;
+}
+
+.account-container-b span{
+    position: absolute;
+    font-size: 130%;
+    margin: 7% 0 0 15%;
+}
+
+.account-container-b h2{
+    color: whitesmoke;
+    position: absolute;
+    font-size: 400%;
+    margin: 46% 45% 48.5% 45%;
+    text-shadow: 1px 2px 1px black;
+}
+
+
+
+
+/*Registrar Usuario*/
+#RUC{
+    box-shadow: 0px 0px 50px #666;
+    border-radius: 20px;
+}
+#RUB{
+    border-radius:10px;
+    border: 1px solid var(--fondo);
+    background-color: var(--fondo);
+    color: var(--header-color-text-icon);
+    font-family: 'Concert One', cursive;
+}
+
+
+
+/*Inicio de Sesion*/
+#ISC{
+    margin-top: 10%;
+}
+#ISB{
+    border: 1px solid var(--fondo);
+    background-color: var(--header-color-text-icon);;
+    color: black;
+    font-family: 'Concert One', cursive;
 }
 
 /*carousel*/
 .movie-container{
     display: flex;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     border: 2px solid rgba(53, 4, 102, 0.54);
     background-color: black;
-    margin-bottom: 3%;
+    margin-bottom: 0;
 }
 
 .box{
@@ -303,6 +710,13 @@ body{
     height: 100%;
     object-fit: cover;
 }
+#ult{
+    font-family: 'Concert One', cursive;
+}
+
+#cv{
+    font-family: 'Concert One', cursive;
+}
 
 /*Trailers*/
 
@@ -434,6 +848,57 @@ body{
     text-shadow: 0px 0px 20px whitesmoke
 }
 
+
+/*seccion peliculas*/
+#SPR:hover{
+    font-size: 100%;
+    color: black;
+    text-shadow: 0px 0px 20px whitesmoke;
+}
+
+#SPP:hover{
+    box-shadow: 0px 0px 15px #26f9c2;
+}
+
+#SPF{
+    box-shadow: 0px 0px 10px whitesmoke;
+    color: #26f9c2;
+    font-family: 'Concert One', cursive;
+}
+
+/*Agregar Contenido*/
+#ABP{
+    color: #26f9c2;
+    font-family: 'Concert One', cursive;
+}
+
+/*Visualización del contendio]*/
+#VCB{
+    overflow: hidden; 
+    position: relative; 
+    background-color: black;
+    height: 35rem; 
+    width: 100%;
+}
+
+#VCB > img{
+    height: 35rem;
+    width: 100%;
+    position: absolute;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+#repro:hover{
+    box-shadow: 0px 0px 10px #26f9c2;
+}
+
+#img{
+    object-fit: cover;
+}
+#VCC{
+    box-shadow: 0px 0px 10px #26f9c2;
+}
 /*Footer*/
 .footer-container{
     background: var(--header);
@@ -466,4 +931,3 @@ footer h2{
     font-size: 35px;
     text-align: center;
 }
-

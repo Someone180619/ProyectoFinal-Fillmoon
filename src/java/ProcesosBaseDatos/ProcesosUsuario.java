@@ -53,6 +53,8 @@ public class ProcesosUsuario {
                 persona.setProfile_img(result.getString("profile_img"));
                 return persona;
             }
+            result.close();
+            stmt.close();
         }catch(Exception e){
             
         }

@@ -4,7 +4,7 @@
     Author     : Oriel Delgado
 --%>
    <!--Footer-->
-    <footer class="bg-dark mt-3 p-2">
+    <footer class="mt-3 p-2">
         <div class="container">
             <ul class="nav justify-content-center p-auto">
                 <li>
