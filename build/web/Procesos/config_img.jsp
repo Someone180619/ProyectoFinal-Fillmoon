@@ -14,7 +14,6 @@
         int actualizar_imagen = personaDb.ActualizarImagen(persona);
 
         if(actualizar_imagen > 0){
-            JOptionPane.showMessageDialog(null, "La imagen fue actualizada con exito");
             session.removeAttribute("id_usuario");
             session.removeAttribute("profile_img");
             response.sendRedirect("../iniciar_sesion.jsp");

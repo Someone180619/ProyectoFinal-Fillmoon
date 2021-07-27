@@ -21,8 +21,8 @@
                         <option value="1">Acción</option>
                         <option value="2">Romance</option>
                         <option value="3">Comedia</option>
-                        <option value="4">Terror</option>
-                        <option value="5">Musicales</option>
+                        <option value="4">Fantasía</option>
+                        <option value="5">Familia</option>
                         <option value="6">Misterio</option>
                       </select>
                     <input type="hidden" name="id_seccion" value="2">

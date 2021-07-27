@@ -22,7 +22,6 @@
         
         int guardarCorreo = personasDb.AgregarCorrespondencia(correo);
         if (guardarCorreo > 0){
-            JOptionPane.showMessageDialog(null, "Correo guardado con exito");
             response.sendRedirect("../principal.jsp");
             return;
         }else{

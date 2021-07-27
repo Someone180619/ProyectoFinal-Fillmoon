@@ -1,4 +1,3 @@
-<%@page import="javax.swing.JOptionPane"%>
 <%@page import="ProcesosBaseDatos.ProcesosPeliculasSeries"%>
 <%@page import="ProcesosBaseDatos.ProcesosRegistros" %>
 <%@page import="Entidad.Peliculas"%>
@@ -36,8 +35,11 @@
     if (resultado >0){
         int log = logDb.AgregarRegistro(reg);
         if(log>0){
-            JOptionPane.showMessageDialog(null, "Registro completado");
             response.sendRedirect("../../ae_peliculas.jsp");
         }
+    }
+    else{
+        session.setAttribute("error", 2);
+        response.sendRedirect("../../ae_peliculas.jsp");
     }
 %>

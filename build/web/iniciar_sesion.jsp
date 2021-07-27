@@ -10,6 +10,7 @@
                 <h4 class="alert-heading">Error!</h4>
                 <p> <%= new Errores(codigo_error).ErrorMessage() %> </p>
                 <hr>
+            </div>
         <%}%>
         <p class="h1 fw-bold" id="logo">Fillmoon</p>
         <div class="form-floating">
