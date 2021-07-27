@@ -1,4 +1,3 @@
-<%@page import="javax.swing.JOptionPane"%>
 <%@page import="Entidad.Personas" %>
 <%@page import="Entidad.Usuarios" %>
 <%@page import="ProcesosBaseDatos.ProcesosUsuario" %>
@@ -16,7 +15,6 @@
         Personas persona = usuariodb.ValidarLogin(usuario);
         
         if (persona != null){
-            JOptionPane.showMessageDialog(null, persona.getProfile_img());
             session.setAttribute("id_usuario", persona.getId());
             session.setAttribute("nombre_usuario", persona.getNombre());
             session.setAttribute("apellido_usuario", persona.getApellido());

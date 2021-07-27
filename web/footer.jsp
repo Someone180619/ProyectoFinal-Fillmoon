@@ -8,21 +8,21 @@
         <div class="container">
             <ul class="nav justify-content-center p-auto">
                 <li>
-                    <a class="navbar-brand fw-bold fs-3" href="#" id="logo">Fillmoon</a>
+                    <a class="navbar-brand fw-bold fs-3" id="logo">Fillmoon</a>
                 </li>
             </ul>
             <ul class="nav justify-content-center p-0">
                 <li class="nav-item">
-                  <a class="nav-link text-light" aria-current="page" href="#">Terminos y aviso de privacidad</a>
+                  <a class="nav-link text-light" aria-current="page" href="#" id="one">Terminos y aviso de privacidad</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Quiénes somos</a>
+                  <a class="nav-link text-light" href="introduccion.jsp" id="one">Quiénes somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Ayuda</a>
+                  <a class="nav-link text-light" href="#" id="one">Ayuda</a>
                 </li>
                 <li class="nav-item">
-                  <p class="nav-link text-light">&copy; 2021 Fillmoon.com</p>
+                  <p class="nav-link text-light" id="one">&copy; 2021 Fillmoon.com</p>
                 </li>
             </ul>
         </div>

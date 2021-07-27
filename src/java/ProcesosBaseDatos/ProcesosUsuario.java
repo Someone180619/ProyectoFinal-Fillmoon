@@ -6,7 +6,6 @@ import Entidad.Personas;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 
 public class ProcesosUsuario {
     Connection _cn;
@@ -68,7 +67,6 @@ public class ProcesosUsuario {
             String query = "CALL Actualizar_nombre ("+persona.getId()+", '"+usuario.getUsername()+"')";
             
             resultado = smtm.executeUpdate(query);
-            JOptionPane.showMessageDialog(null, resultado);
              return resultado;
         }catch(Exception e){}
         return resultado; 
@@ -81,7 +79,6 @@ public class ProcesosUsuario {
             String query = "CALL Actualizar_contrasena ("+persona.getId()+", '"+usuario.getPassword()+"')";
             
             resultado = smtm.executeUpdate(query);
-            JOptionPane.showMessageDialog(null, resultado);
              return resultado;
         }catch(Exception e){}
         return resultado; 

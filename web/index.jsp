@@ -38,7 +38,7 @@
 
     <!--Chat-->
     <div class="chat-container d-flex justify-content-center">
-        <span>MÁS AMIGO MÁS DIVERSION</span>
+        <span>MÁS AMIGO, MÁS DIVERSION</span>
         <p id="one">AGREGA A TUS AMIGOS, MIRA PELÍCULAS CON ELLOS AL MISMO TIEMPO Y EN CUALQUIER LUGAR Y DISPOSITIVO QUE DESEES</p>
         <div class="chat-container-b">
             <img src="https://www.themoviedb.org/t/p/original/1i1N0AVRb54H6ZFPDTwbo9MLxSF.jpg" alt="">

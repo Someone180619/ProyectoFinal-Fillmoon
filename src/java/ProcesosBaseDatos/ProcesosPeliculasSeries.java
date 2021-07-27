@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JOptionPane;
 
 public class ProcesosPeliculasSeries {
     Connection _cn;
@@ -84,7 +83,6 @@ public class ProcesosPeliculasSeries {
             
             result.close();
             smtm.close();
-            JOptionPane.showMessageDialog(null, peliculas);
             return peliculas;
             
         }catch(Exception e){
@@ -245,8 +243,8 @@ public class ProcesosPeliculasSeries {
                 case 7:
                     query = "CALL ActualizarDescripcionContenido("+id+", '"+contenido+"')";
                     break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Error");       
+                default:     
+                    System.out.println("Error");
             }
             validador = smtm.executeUpdate(query);;
             smtm.close();
@@ -275,7 +273,6 @@ public class ProcesosPeliculasSeries {
     }
     
     public Peliculas BuscarContenido(String nombre_contenido){
-        JOptionPane.showMessageDialog(null, nombre_contenido);
         try{
             Statement smtm = _cn.createStatement();
             
@@ -290,7 +287,6 @@ public class ProcesosPeliculasSeries {
                 cont.setPosters(result.getString("posters"));
                 cont.setDescripcion(result.getString("descripcion"));
                 cont.setEstreno(result.getString("estreno"));
-                JOptionPane.showMessageDialog(null, result.getString("nombre"));
                 return cont;
             }
             result.close();

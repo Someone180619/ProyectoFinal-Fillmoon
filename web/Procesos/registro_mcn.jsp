@@ -33,12 +33,9 @@
         
         int guardarPersona = personasDb.RegistrarPersona(persona);
         if (guardarPersona > 0){
-            System.out.println("Persona guardada con exito en la base de datos");
             int guardarUsuario = usuarioDb.GuardarUsuario(usuarios, correo);
-            JOptionPane.showMessageDialog(null, guardarUsuario);
             if (guardarUsuario > 0){
                 out.println("<h2>Usuario y persona Registrado correctamente</h2>");
-                JOptionPane.showMessageDialog(null, "El usuario fue registrado");
                 response.sendRedirect("../iniciar_sesion.jsp");
                 return;
             }

@@ -8,7 +8,7 @@
     int delete = pp.EliminarPersona(user);
     
     if (delete>0){
-        response.sendRedirect("../../principal.jsp");
+        response.sendRedirect("../../iniciar_sesion.jsp");
     }
     else{
         JOptionPane.showMessageDialog(null, "Error");

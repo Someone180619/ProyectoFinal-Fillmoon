@@ -23,6 +23,8 @@ public class Errores {
         switch (this.error){
             case 1:
                 return "Datos no almacenados en el registro";
+            case 2:
+                return "Asegurate de que los datos ingresados no contengan símbolos y ciertos carácteres";
         }
         return "";
     }
